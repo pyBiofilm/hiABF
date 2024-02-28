@@ -4,3 +4,4 @@ We applied the combination of primary sequence-based, order-based, and structure
 
 We provided a computational platform for predicting the high activity of peptide sequences against bacteria in the biofilm state of life.(hiABFs)
 
+![Figure 2](https://github.com/pyBiofilm/hiABF/assets/123871768/3b68da67-97f3-4b36-845c-dd5326d73e44)
