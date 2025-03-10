@@ -214,14 +214,14 @@ from modlamp.datasets import load_custom
 # lib_Pos_ABF.hydrophobic_ratio(append=True)
 # lib_Pos_ABF.charge_density(ph=7.4, amide=False, append=True)
 # col_names1 = 'ID, Sequence,Length,BomanIndex,Aromaticity,AliphaticIndex,InstabilityIndex, NetCharge, MW, IsoelectricPoint, HydrophobicRatio'
-# lib_Pos_ABF.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/lib_Pos_ABF.csv', header=col_names1)
+# lib_Pos_ABF.save_descriptor('path', header=col_names1)
 
 # lib_Pos_ABF.calculate_all(amide=True)
 # lib_Pos_ABF.featurenames
 # lib_Pos_ABF.descriptor
 
 # col_names1 = 'Sequence, Length, MolecularWeight, Charge, ChargeDensity, PI, InstabilityInd, Aromaticity, AliphaticInd, BomanInd, HydrophobicRatio'
-# lib_Pos_ABF.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/lib_Pos_ABF.csv', header=col_names1)
+# lib_Pos_ABF.save_descriptor('path', header=col_names1)
 
 #### Peptide descriptors:
 
@@ -298,18 +298,18 @@ from modlamp.datasets import load_custom
 # pepdesc_total.calculate_moment(append=True) # calculate Amino acid transmembrane propensity scale moment
 
 # col_names2 = 'ID,Sequence,H_Eisenberg,uH_Eisenberg,H_GRAVY,uH_GRAVY,Z3_1,Z3_2,Z3_3, Z5_1,Z5_2,Z5_3, Z5_4,Z5_5,S_AASI, uS_AASI, modlas_ABHPRK, H_argos, uH_argos, B_Builkiness, uB_Builkiness, charge_phys, charge_acid, Ez, flexibility, u_flexibility, Grantham, H_HoppWoods, uH-HoppWoods, ISAECI, H_Janin, uH_Janin, H_KyteDoolittle, uH_KyteDoolittle, F_Levitt, uF_Levitt, MSS_shape, u_MSS_shape, MSW, pepArc, pepcats, polarity, u_polarity, PPCALI, refractivity, u_refractivity, t_scale, TM_tend, u_TM_tend'
-# pepdesc_total.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/Pepdescriptor-Pos-library.csv', header=col_names2)
+# pepdesc_total.save_descriptor('path', header=col_names2)
 
 # # # ###### Merge positive library descriptors (Global and Pepdescriptors)
 
-# pepdesc_ABF = pd.read_csv('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/prepared descriptors/Pepdescriptor-ABF-library.csv', index_col=0)
-# globdesc_ABF = pd.read_csv('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/prepared descriptors/Globaldescriptor-ABF-library.csv', index_col=0)
+# pepdesc_ABF = pd.read_csv('path', index_col=0)
+# globdesc_ABF = pd.read_csv('path', index_col=0)
 
 # ABF_library = pepdesc_ABF.join(globdesc_ABF)
 # # # print(ABF_library.shape)
 
 
-# ABF_library.to_csv('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/prepared descriptors/ABF-descriptors-library.csv')
+# ABF_library.to_csv('path')
 
 
 
