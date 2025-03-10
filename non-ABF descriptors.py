@@ -216,7 +216,7 @@ negative_ABF.featurenames
 negative_ABF.descriptor
 
 col_names3 = 'Sequence, Length, MolecularWeight, Charge, ChargeDensity, PI, InstabilityInd, Aromaticity, AliphaticInd, BomanInd, HydrophobicRatio'
-negative_ABF.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/Glob_neh.csv', header=col_names3)
+negative_ABF.save_descriptor('path', header=col_names3)
 
 #### Peptide descriptors:
 
@@ -293,7 +293,7 @@ negative_ABF.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiof
 # pepdesc_total.calculate_moment(append=True) # calculate Amino acid transmembrane propensity scale moment
 
 # col_names4 = 'ID,Sequence,H_Eisenberg,uH_Eisenberg,H_GRAVY,uH_GRAVY,Z3_1,Z3_2,Z3_3, Z5_1,Z5_2,Z5_3, Z5_4,Z5_5,S_AASI, uS_AASI, modlas_ABHPRK, H_argos, uH_argos, B_Builkiness, uB_Builkiness, charge_phys, charge_acid, Ez, flexibility, u_flexibility, Grantham, H_HoppWoods, uH-HoppWoods, ISAECI, H_Janin, uH_Janin, H_KyteDoolittle, uH_KyteDoolittle, F_Levitt, uF_Levitt, MSS_shape, u_MSS_shape, MSW, pepArc, pepcats, polarity, u_polarity, PPCALI, refractivity, u_refractivity, t_scale, TM_tend, u_TM_tend'
-# pepdesc_total.save_descriptor('D:/Ph.D Journey/Ph.D term 5/Thesis-ML-Pep/antibiofilm pep data/Pepdescriptor-Neg_library.csv' , header=col_names4)
+# pepdesc_total.save_descriptor('path' , header=col_names4)
  
 
 
